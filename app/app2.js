@@ -37,8 +37,37 @@ var url = "mongodb://localhost:27017/mydb";
       ];
 
 
-      var myobj4= {  name: 'Chocolate ', address: 'uyguyg'} ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      var myobj4= {  name: 'Chocolate ', address: 'Va'} ;
       //{ _id: 2, name: '44 Heaven2', address: 'Sideway 1633'} ;Chocolate 44 Valley 345
+
+
+
+
+
+
+
+
+
 
 
 
@@ -49,7 +78,7 @@ var url = "mongodb://localhost:27017/mydb";
 
 
 
-
+//connect connect connect connect connect connect connect connect connect connect 
 
 MongoClient.connect(url, function(err, database) {
     if (err) throw err;
@@ -68,12 +97,15 @@ MongoClient.connect(url, function(err, database) {
     //*** create createCollection
 
 
-    //*** collection insertOne insert insert insert
+    //****** insert insert insert insert insert insert insert insert insert ----- insertOne
+    /* 
+
         myAwesomeDB.collection("Collection2").insertOne(myobj4, function(err, res) {
             if (err) throw err;
             console.log("1 document inserted");
         });
-    //*** create insertOne
+    */
+    //****** insert insert insert insert insert insert insert insert insert ----- insertOne 
 
 
 
@@ -126,16 +158,19 @@ MongoClient.connect(url, function(err, database) {
 
      //******updateOne
 
-/*
-     var myquery = { address: "Valley 345" };
-     var newvalues = { name: "Mickey", address: "Canyon 123" };
+
+     var myquery = { address: "Va3" };
+    // var newvalues = { $set: { name: "Mickey", address: "Canyon 123" }};
+     
+    var newvalues = { $set: { name: "Mickey" }};
+
+
      myAwesomeDB.collection("Collection2").updateOne(myquery, newvalues, function(err, res) {
        if (err) throw err;
        console.log("1 document updated");
     });
 
-*/
-
+    
     //******updateOne
 
 
