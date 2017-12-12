@@ -126,7 +126,7 @@ MongoClient.connect(url, function(err, database) {
 
      //******updateOne
 
-
+/*
      var myquery = { address: "Valley 345" };
      var newvalues = { name: "Mickey", address: "Canyon 123" };
      myAwesomeDB.collection("Collection2").updateOne(myquery, newvalues, function(err, res) {
@@ -134,7 +134,7 @@ MongoClient.connect(url, function(err, database) {
        console.log("1 document updated");
     });
 
-
+*/
 
     //******updateOne
 
