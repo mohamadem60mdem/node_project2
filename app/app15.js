@@ -1,6 +1,5 @@
 //Delete Files : fs.unlink() 
 
-
 var fs = require('fs');
 
 fs.unlink('mynewfile2.txt', function (err) {
