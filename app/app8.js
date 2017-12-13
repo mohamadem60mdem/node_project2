@@ -22,10 +22,40 @@ Syntax	http://www.developerstudio.ir/submit.php? fname = Ali & age = 26
 */
 var http = require('http');
 var url = require('url');
+var fs = require('fs');
 
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
+  /*
   var q = url.parse(req.url, true).query;
   var txt = q.year + " " + q.month;
-  res.end(txt);
-}).listen(8082);
+  res.write(txt);
+  */
+
+
+
+  //************************** 
+  var q2 = url.parse(req.url, true);
+ // var filename = "." + q2.pathname;
+  //res.write(q2.query.year);
+
+  //console.log(q2.host); //returns 'localhost:8080'
+
+  var qdata = q2.query; //returns an object: { year: 2017, month: 'february' }
+  
+  var txt1 =  "<br> qdata.year is  "+ qdata.year + "<br> qdata.month is " + qdata.month + " ";;
+  var txt2 =  q2.year + "-------- " + q2.month;
+  var txt3 =  "<br> q2.host is  "+ "<br> " + q2.host + " ";
+  var txt4 =  "<br> q2.pathname is  "+ "<br> " + q2.pathname + " ";
+  var txt5 =  "<br> q2.search is  "+ "<br> " + q2.search + " ";
+
+
+  res.write(txt1 +txt2 +txt3 +txt4 +txt5  );
+  //**************************
+
+
+
+
+ res.end( );
+
+}).listen(8080);
