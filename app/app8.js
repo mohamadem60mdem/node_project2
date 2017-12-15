@@ -1,5 +1,5 @@
 //Split the Query String
-// راهکار دریافت درخواست http
+// راهکار دریافت درخواست http require
 /*
 http://localhost:8080/?year=2017&month=July
 
