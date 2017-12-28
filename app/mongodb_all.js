@@ -99,7 +99,7 @@ MongoClient.connect(url, function(err, database) {
     */
 
 
-     //******find  مدل اول 
+     //******find  مدل اول openshift 
 
      /*
      myAwesomeDB.collection("Collection2").find({}).toArray(function(err, result) {
@@ -108,7 +108,7 @@ MongoClient.connect(url, function(err, database) {
       });
       */   
 
-     //******find  مدل اول 
+     //******find  مدل اول openshift
 
 
 

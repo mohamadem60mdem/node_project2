@@ -2,7 +2,7 @@
 //Node.js MongoDB Create Database and createCollection
  
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/mydb";
+var url = "mongodb://a:a@localhost:27017/mydb";
 
 
 
