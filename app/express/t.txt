@@ -1,0 +1,20 @@
+npm install -g nodemon
+a@MD_COMPUTER:/usr/lib/node_modules$
+
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+
+// برای اضافه کردن مسیر بدون پاک کردن قبلی ها
+export PATH=$PATH:/a1/a2
+
+
+// برای اضافه کردن مسیربا پاک کردن قبلی ها
+export PATH=/a1/a2
+
+********************************************************************************
+/usr/lib/
+ export PATH=/usr/lib/node_modules
+
+ sudo nano /etc/environment
+ mkdir -pv x/a1/a2
+ rmdir -pv x/a1/a2
+  ls -R
